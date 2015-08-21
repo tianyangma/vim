@@ -1,8 +1,8 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " Let Vundle manage Vundle
 Bundle 'gmarik/vundle'
@@ -26,8 +26,6 @@ Bundle 'slim-template/vim-slim'
 filetype plugin indent on
 
 let mapleader=","
-
-color jellybeans
 
 set cursorline
 set expandtab
@@ -72,7 +70,7 @@ nnoremap j gj
 nnoremap k gk
 
 " format the entire file
-nmap <leader>fef ggVG=
+nmap <leader>f ggVG=
 
 " Open new buffers
 nmap <leader>s<left>   :leftabove  vnew<cr>
