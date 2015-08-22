@@ -15,7 +15,12 @@ Plugin 'scrooloose/nerdtree'
 call vundle#end()
 
 filetype plugin indent on
+set expandtab
 set number
+set shiftwidth=2
+set smarttab
+set softtabstop=2
+set tabstop=2
 
 let mapleader=","
 
