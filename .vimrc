@@ -15,6 +15,7 @@ Plugin 'scrooloose/nerdtree'
 call vundle#end()
 
 filetype plugin indent on
+set number
 
 let mapleader=","
 
