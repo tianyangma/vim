@@ -11,6 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'google/vim-maktaba'
 Plugin 'google/vim-codefmt'
 Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 
@@ -59,3 +60,5 @@ noremap <leader>f :FormatCode<cr>
 
 " Quit with :Q
 command -nargs=0 Quit :qa!
+
+nnoremap <Leader>o :CtrlP<CR>
