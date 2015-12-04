@@ -12,6 +12,7 @@ Plugin 'google/vim-maktaba'
 Plugin 'google/vim-codefmt'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
+Plugin 'altercation/vim-colors-solarized.git'
 
 call vundle#end()
 
@@ -62,3 +63,5 @@ noremap <leader>f :FormatCode<cr>
 command -nargs=0 Quit :qa!
 
 nnoremap <Leader>o :CtrlP<CR>
+
+syntax enable
