@@ -14,6 +14,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized.git'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-scripts/taglist.vim'
 
 call vundle#end()
 
@@ -32,7 +33,7 @@ let mapleader=","
 imap jj <ESC>
 noremap <space> :
 
-map <leader>ev :e! ~/.vimrc<cr> " edit ~/.vimrc
+map <leader>ev :e! ~/.vimrc<cr>
 
 " Jump to the next row on long lines
 map <Down> gj
@@ -71,6 +72,9 @@ nnoremap <leader><leader> <C-^>
 nmap <leader>n :NERDTreeToggle<CR>
 let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
+
+" Taglist
+nmap <leader>t :TlistToggle<CR>
 
 " ClangFormat
 noremap <leader>f :FormatCode<cr>
