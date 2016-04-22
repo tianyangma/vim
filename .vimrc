@@ -14,6 +14,8 @@ Plugin 'google/vim-codefmt'
 Plugin 'kien/ctrlp.vim'
 Plugin 'powerline/powerline'
 Plugin 'scrooloose/nerdtree'
+Plugin 'google/vim-maktaba'
+Plugin 'google/vim-glaive'
 Plugin 'vim-scripts/taglist.vim'
 
 call vundle#end()
