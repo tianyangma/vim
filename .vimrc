@@ -8,12 +8,12 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " My Bundles
-Plugin 'google/vim-maktaba'
-Plugin 'google/vim-codefmt'
-Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
-Plugin 'altercation/vim-colors-solarized.git'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'altercation/vim-colors-solarized.git'
+Plugin 'google/vim-codefmt'
+Plugin 'kien/ctrlp.vim'
+Plugin 'powerline/powerline'
+Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/taglist.vim'
 
 call vundle#end()
@@ -89,3 +89,8 @@ nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>e :e ~/.vimrc<CR>
 
 syntax enable
+
+" Powerline.
+set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+set laststatus=2
+set t_Co=256
