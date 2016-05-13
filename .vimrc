@@ -16,7 +16,7 @@ Plugin 'powerline/powerline'
 Plugin 'scrooloose/nerdtree'
 Plugin 'google/vim-maktaba'
 Plugin 'google/vim-glaive'
-Plugin 'vim-scripts/taglist.vim'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()
 
@@ -96,3 +96,16 @@ syntax enable
 set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 set laststatus=2
 set t_Co=256
+
+" Switch between buffers.
+nmap <tab> :b#<cr>
+
+
+" Resize window
+nnoremap <S-l> :vertical resize +5<cr>
+nnoremap <S-h> :vertical resize -5<cr>
+
+map <space> :
+
+" Tagbar.
+nmap <F8> :TagbarToggle<CR>
